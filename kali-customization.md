@@ -247,7 +247,34 @@ Some default packages will cause problems in a netboot environment; we don't nee
 
 ## Tools
 
-### 010editor
+### Ubuntu/Kali packages
+
+These tools are very easy to install: just `apt install` them!
+
+| Tool(s)                       | Package(s)                                                   | Notes                                                        | Source                                           |
+| ----------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------ |
+| Additional Kali meta-packages | `kali-linux-large kali-tools-crypto-stego kali-tools-database kali-tools-forensics kali-tools-fuzzing kali-tools-passwords kali-tools-reverse-engineering kali-tools-sniffing-spoofing kali-tools-social-engineering kali-tools-voip kali-tools-web` | Many GB of additional tools                                  | Various                                          |
+| Audacity                      | `audacity`                                                   | Audio editor                                                 | https://github.com/audacity/audacity             |
+| CyberChef                     | `cyberchef`                                                  | Misc. tools from GCHQ for fooling around with encodings, etc. | https://github.com/gchq/CyberChef                |
+| DMTX                          | `dmtx-utils`                                                 | Data matrix barcode tools                                    | https://github.com/dmtx/dmtx-utils               |
+| EXIF tools                    | `exif`                                                       | JPEG image metadata tool                                     | https://github.com/libexif/exif                  |
+| Ghidra                        | `ghidra`                                                     | Software Reverse Engineering tool from NSA                   | https://github.com/NationalSecurityAgency/ghidra |
+| Hex editors                   | `hexedit hexer ht ncurses-hexedit wxhexeditor tweak`         | Various hex editors                                          | Various                                          |
+| LibreOffice                   | `libreoffice`                                                | Office suite                                                 | https://github.com/LibreOffice                   |
+| LRZip                         | `lrzip`                                                      | Compression tool for large files                             | https://github.com/ckolivas/lrzip                |
+| PulseView                     | `pulseview`                                                  | Waveform viewer                                              | https://sigrok.org/wiki/PulseView                |
+| PwnTools                      | `python3-pwntools`                                           | Python library for exploit development                       | https://github.com/Gallopsled/pwntools           |
+| System status viewers         | `bpytop btm htop`                                            | Command-line status viewers that look nicer than `top`       | Various                                          |
+| Terminals and shells          | `alacritty fish xfce4-terminal`                              | Optional: set Alacritty as default terminal with `update-alternatives --set x-terminal-emulator /usr/bin/alacritty` | Various                                          |
+| VLC                           | `vlc`                                                        | VideoLAN Client: media player                                | https://github.com/videolan/vlc                  |
+| ZBar                          | `zbar`                                                       | Barcode tools                                                | https://github.com/mchehab/zbar                  |
+| Other command-line tools      | `bat eza ripgrep sd`                                         | Nicer versions of `cat`, `ls`, `grep` and `sed`              | Various                                          |
+
+### Other tools
+
+These tools are a bit more complicated to install
+
+#### 010editor
 
 * `zfs create zroot/pandorica/software`
 
@@ -269,80 +296,14 @@ Some default packages will cause problems in a netboot environment; we don't nee
 * `mkdir /etc/skel/Desktop`
 * `cp /usr/share/applications/010editor.desktop /etc/skel/Desktop/`
 
-### Additional Kali tools
-
-* `apt install kali-tools-crypto-stego kali-tools-fuzzing kali-tools-voip kali-tools-web kali-tools-database kali-tools-passwords kali-tools-reverse-engineering kali-tools-social-engineering kali-tools-sniffing-spoofing kali-tools-forensics kali-linux-large`
-
-### Audacity
-
-* `apt install audacity`
-
-### Bless hex editor
+#### Bless hex editor
 
 * TODO: needs to be built from source?
 
-### CyberChef (GCHQ)
-
-* `apt install cyberchef`
-
-### DMTX
-
-* `apt install dmtx-utils`
-
-### EXIF utilities
-
-* `apt install exif`
-
-### Ghidra (NSA)
-
-* `apt install ghidra`
-
-### Hex editors
-
-* `apt install hexedit hexer ht ncurses-hexedit wxhexeditor tweak`
-
-### PulseView
-
-* Waveform viewer
-
-* `apt install pulseview`
-
-### Python PWN tools
-
-* `apt install python3-pwntools`
-
-## System status viewers
-
-* `apt install bpytop htop`
-
-### VLC (VideoLAN Client)
-
-* `apt install vlc`
-
-## Terminals and shells
-
-* `apt install alacritty xfce4-terminal`
-* `apt install fish`
-* `update-alternatives --set x-terminal-emulator /usr/bin/alacritty`
-
-## `zbar`
-
-* `apt install zbar-tools`
-
-### Zoo
+#### Zoo
 
 * This is an historic archiving tool
 * Build from https://github.com/troglobit/zoo
-
-## Targets
-
-### Libreoffice
-
-* `apt install libreoffice`
-
-### `lrzip`
-
-* `apt install lrzip`
 
 ## GUI
 
