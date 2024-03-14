@@ -36,7 +36,7 @@ We can customize the client Kali netboot filesystem from within a `chroot` on th
 
   * `mkdir /var/lib/blueman`
 
-* Update `/usr/lib/tmpfiles.d`:
+* Don't expect read-write access to `/etc` in `/usr/lib/tmpfiles.d`:
 
   ```diff
   --- credstore.conf.orig 2024-03-14 12:16:50.544238000 +0000
