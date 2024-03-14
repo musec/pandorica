@@ -1,5 +1,7 @@
 # Pandorica
 
+![An AI-generated image of something that could be called a Pandorica](pandorica.webp)
+
 Documentation for our CTF lab environment, which is a self-contained "lab in a box" for hosting diskless clients in full isolation from other networks. Students get root access within a managed environment, allowing them to muck things up locally but not in a durable way. This setup uses:
 
 * PXE booting for diskless clients
