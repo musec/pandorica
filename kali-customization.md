@@ -28,7 +28,6 @@ We can customize the client Kali netboot filesystem from within a `chroot` on th
   tmpfs   /var/lib/binfmts        tmpfs   rw      0 0
   tmpfs   /var/lib/blueman        tmpfs   rw      0 0
   tmpfs   /var/lib/lightdm        tmpfs   rw      0 0
-  #tmpfs   /var/lib/nfs            tmpfs   rw      0 0
   tmpfs   /var/log                tmpfs   rw      0 0
   tmpfs   /var/tmp                tmpfs   rw      0 0
   ```
