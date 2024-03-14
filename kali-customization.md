@@ -40,16 +40,16 @@ We can customize the client Kali netboot filesystem from within a `chroot` on th
 * Update `/usr/lib/tmpfiles.d`:
 
   ```diff
-  --- credstore.conf      2024-03-14 12:16:50.544238000 +0000
-  +++ credstore.conf.orig 2024-03-14 12:15:32.711971000 +0000
+  --- credstore.conf.orig 2024-03-14 12:16:50.544238000 +0000
+  +++ credstore.conf      2024-03-14 12:15:32.711971000 +0000
   @@ -7,7 +7,7 @@
   
    # See tmpfiles.d(5) for details
   
-  -#d /etc/credstore 0700 root root
-  -#d /etc/credstore.encrypted 0700 root root
-  +d /etc/credstore 0700 root root
-  +d /etc/credstore.encrypted 0700 root root
+  -d /etc/credstore 0700 root root
+  -d /etc/credstore.encrypted 0700 root root
+  +#d /etc/credstore 0700 root root
+  +#d /etc/credstore.encrypted 0700 root root
    z /run/credstore 0700 root root
    z /run/credstore.encrypted 0700 root root
   ```
