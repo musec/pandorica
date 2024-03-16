@@ -257,6 +257,7 @@ These tools are very easy to install: just `apt install` them!
 | CyberChef                     | `cyberchef`                                                  | Misc. tools from GCHQ for fooling around with encodings, etc. | https://github.com/gchq/CyberChef                |
 | DMTX                          | `dmtx-utils`                                                 | Data matrix barcode tools                                    | https://github.com/dmtx/dmtx-utils               |
 | EXIF tools                    | `exif`                                                       | JPEG image metadata tool                                     | https://github.com/libexif/exif                  |
+| FFMpeg                        | `ffmpeg`                                                     | Video transcoder and Swiss Army knife                        | https://github.com/FFmpeg/FFmpeg                 |
 | Ghidra                        | `ghidra`                                                     | Software Reverse Engineering tool from NSA                   | https://github.com/NationalSecurityAgency/ghidra |
 | Hex editors                   | `hexedit hexer ht ncurses-hexedit wxhexeditor tweak`         | Various hex editors                                          | Various                                          |
 | LibreOffice                   | `libreoffice`                                                | Office suite                                                 | https://github.com/LibreOffice                   |
