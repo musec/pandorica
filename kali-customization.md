@@ -456,7 +456,16 @@ These tools are a bit more complicated to install
        <property name="plugin-18" type="string" value="power-manager-plugin"/>
   ```
   
+* Create `/etc/X11/xorg.conf.d/blanktime.conf` to avoid blanking screensaver on the login screen:
   
+  ```xorg
+  Section "ServerFlags"
+          Option  "blank time"    "0"
+          Option  "standby time"  "0"
+          Option  "suspend time"  "0"
+          Option  "off time"      "0"
+  EndSection
+  ```
   
 * Other eye candy
   
