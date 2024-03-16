@@ -321,6 +321,9 @@ These tools are a bit more complicated to install
     [... customize other stuff if you like ...]
     theme-name=Adwaita-dark
     icon-theme-name=Flat-Remix-Purple-Dark
+    
+    [...]
+    screensaver-timeout=1800
     ```
 
 * Firefox
