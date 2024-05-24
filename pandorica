@@ -1,0 +1,36 @@
+#!/bin/sh
+
+if [ "$1" = "start" ]
+then
+	echo "Activating Pandorica!"
+
+	# Activate relay to open the fibre connection
+	echo -n "Disconnecting fibre uplink... "
+	arduino --quiet digital write 2 True
+	echo "done."
+
+	# Start running our DHCP server
+	echo -n "Starting local DHCP..."
+	sudo service isc-dhcpd onestart
+	echo "done."
+
+	echo "The Pandorica is active."
+elif [ "$1" = "stop" ]
+then
+	echo "Deactivating the Pandorica."
+
+	# First kill DHCP
+	echo -n "Stopping local DHCP... "
+	sudo service isc-dhcpd onestop
+	echo "done."
+
+	# Then de-activate the relay to close the fibre connection
+	echo -n "Re-connecting fibre uplink... "
+	arduino --quiet digital write 2 False
+	echo "done."
+
+	echo "LabNet is now available again."   
+else
+	echo "Usage:  pandorica <start|stop>"
+	exit 1
+fi
