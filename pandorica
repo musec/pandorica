@@ -11,7 +11,7 @@ then
 
 	# Start running our DHCP server
 	echo -n "Starting local DHCP..."
-	sudo service isc-dhcpd onestart
+	service isc-dhcpd onestart
 	echo "done."
 
 	echo "The Pandorica is active."
@@ -21,7 +21,7 @@ then
 
 	# First kill DHCP
 	echo -n "Stopping local DHCP... "
-	sudo service isc-dhcpd onestop
+	service isc-dhcpd onestop
 	echo "done."
 
 	# Then de-activate the relay to close the fibre connection
